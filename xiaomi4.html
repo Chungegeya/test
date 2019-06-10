@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>小米商城</title>
+		<style type="text/css">
+			.top{
+				background-color:black;
+			}
+			.top_1{
+				width:80%;
+				border: 1px solid black;
+				height:46px;
+				background-color:black;
+				margin:0 auto;				
+			}
+			.top_2{
+				width:80%;
+				margin:0 auto;
+			}
+			.nav_2{
+				display:inline-block;
+				margin-top: 22px;
+                vertical-align: top;
+			}
+			.ul_1{
+				list-style-type:none;
+				padding-left:0;
+			}
+			.ul_2{
+				list-style-type:none;
+				padding-left: 65px;
+			}
+			.item_1{
+				display: inline-block;
+                color: #979090;
+                padding-right: 6px;
+                font-size: 14px;
+			}
+			.item_2{
+				display:inline-block;
+				font-size: 18px;
+                width: 77px;
+                text-align: center;
+			}
+			.top_2 img{
+				margin-top: 15px;
+			}
+			.land{
+				display:inline;
+				margin-left:200px;
+				float:right;
+				
+			}
+			.shop{
+				display:inline;
+				color:#979090;
+			}
+			.shop span{
+				font-size:14px;
+				color:#979090;
+			}
+			.text_1{
+				height: 30px;
+				width:183px;
+                vertical-align: top;
+                margin-top: 30px;
+			}
+			.submit_1{
+				background-color: white;
+                vertical-align: top;
+                height: 36px;
+                width: 60px;
+                margin-top: 30px;
+                margin-left:-5px;
+			}
+			
+			.left{
+				width:293px;
+				height:667px;
+				border: 1px solid black;
+				background-color:black
+			}
+			.left span{
+				color:white;
+				font-size:18px;
+			}
+			a{
+				color:white;
+				font-size:20px;
+			}
+			.span{
+				width: 293px;
+                height: 46px;
+                text-align: center;
+                padding-top: 20px;			
+			}
+			.span:hover{
+				background-color:orangered;
+			}
+			.right{
+				width: 1027px;
+                height: 670px;
+                position: absolute;
+                left:295px;              				
+			}
+			.div_1{
+				width: 922px;
+                height: 670px;
+                display:none;
+                position: absolute;
+                left:295px;
+                top: -1px;
+				
+			}			
+			.first:hover{
+				background-color:orangered;
+			}
+			.first:hover .div_1{
+				display:block;
+			}
+			.right img{
+				width: 922px;
+                height: 670px;
+			}
+			.div_1 img{
+				width:922px;
+				height:676px;
+			}
+			.body{
+				width:80%;
+				margin:0 auto;
+				border:1px solid red;
+				position:absolute;
+				top:160px;
+				left:152px;
+			}
+
+
+
+			
+			.right_1{
+				border:1px solid gainsboro;
+				width:105px;
+				height:594px;
+				text-align:center;
+				position:fixed;
+				left:1415px;
+				top:150px;			
+			}
+			.one{
+				border:1px solid gainsboro;
+				width:90px;
+				height:90px;
+			}
+			.one_1{
+				position:fixed;
+				width:90px;
+				height:90px;
+				display:none;
+
+			}
+			.one_2{
+				color:orangered;
+			}
+			.one_3{
+				border:1px solid gainsboro;
+				width:104px;
+				height:135px;				
+				position:fixed;
+				top:150px;
+				left:1300px;
+			}
+			.one_3 img{
+				width:80px;
+				height:80px;
+			}
+			.one:hover .one_1{
+				display:block;
+			}
+			.two{
+				border:1px solid gainsboro;
+				width:90px;
+				height:90px;
+			}
+			.two_1{
+				position:fixed;
+				width:90px;
+				height:90px;
+				display:none;
+			}
+			.two_2{
+				color:orangered;
+			}
+			.two:hover .two_1{
+				display:block;
+			}
+			
+			.three{
+				border:1px solid gainsboro;
+				width:90px;
+				height:90px;
+			}
+			.three_1{
+				position:fixed;
+				width:90px;
+				height:90px;
+				display:none;
+			}
+			.three_2{
+				color:orangered;
+			}
+			.three:hover .three_1{
+				display:block;
+			}
+			
+			.four{
+				border:1px solid gainsboro;
+				width:90px;
+				height:90px;
+			}
+			.four_1{
+				position:fixed;
+				width:90px;
+				height:90px;
+				display:none;
+			}
+			.four_2{
+				color:orangered;
+			}
+			.four:hover .four_1{
+				display:block;
+			}
+			.five{
+				border:1px solid gainsboro;
+				width:90px;
+				height:90px;
+			}
+			.five_1{
+				position:fixed;
+				top:628px;
+				left:1437px;
+				display:none;
+			}
+			.five_2{
+				color:orangered;
+				
+			}
+			.five:hover .five_1{
+				display:block;
+			}
+			.right_1 img{
+				margin-top:15px;				
+			}
+			.right_1 span{				
+				color:gray;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="top">
+			<div class="top_1">
+			<nav class="nav_1">
+			<ul class="ul_1">
+				<li class="item_1">小米商城</li>
+				<li class="item_1">MIUI</li>
+				<li class="item_1">loT</li>
+				<li class="item_1">云服务</li>
+				<li class="item_1">金融</li>
+				<li class="item_1">有品</li>
+				<li class="item_1">小爱开放平台</li>
+				<li class="item_1">企业团购</li>
+				<li class="item_1">资质证照</li>
+				<li class="item_1">协议规则</li>
+				<li class="item_1">下载App</li>
+				<li class="item_1">Select Regin</li>
+				<div class="land">
+				<li class="item_1">登陆</li>
+				<li class="item_1">注册</li>
+				<li class="item_1">消息通知</li>
+				<div class="shop">
+				<span>购物车</span>
+				</div>
+				</div>
+			</ul>
+			</nav>
+		</div>					
+		</div>
+		
+		<div class="top_2">
+			<img src="img/f.png" />
+			<nav class="nav_2">
+			<ul class="ul_2">	
+				<li class="item_2">小米手机</li>
+				<li class="item_2">Redmi</li>
+				<li class="item_2">电视</li>
+				<li class="item_2">笔记本</li>
+				<li class="item_2">家电</li>
+				<li class="item_2">新品</li>
+				<li class="item_2">路由器</li>
+				<li class="item_2">智能硬件</li>
+				<li class="item_2">服务</li>
+				<li class="item_2">社区</li>
+			</ul>	    
+			</nav>
+			<input type="text" class="text_1"/>
+			<input type="submit" class="submit_1"/>
+		</div>
+		
+		<div class="body">
+			<div class="right">
+			<img src="img/two.jpg" />	
+			</div>
+			<div class="left" style="background:red">
+				<div class="span">
+				<span class="first">
+				手机  电话卡
+				<div class="div_1">
+				<img src="img/one.jpg" />
+				</div>
+				</span>
+				</div>
+				
+				<div class="span">
+				<span class="second">
+					电视  盒子
+				</span>
+				</div>
+				
+				<div class="span">
+				<span class="third">
+					笔记本 平板
+				</span> 
+				</div>
+				
+				<div class="span">
+				<span class="fourth">
+					家电  插线板
+				</span>
+				</div>
+				
+				<div class="span">
+				<span class="fifth">
+					出行  穿戴
+				</span>	
+				</div>
+				
+				<div class="span">
+				<span class="six">
+					智能路由器
+				</span>
+				</div>
+				
+				<div class="span">
+				<span class="seven">
+					电源配件
+				</span>
+				</div>
+				
+				<div class="span">
+				<span class="eight">
+					健康 儿童
+				</span>
+				</div>
+				
+				<div class="span">
+				<span class="nine">
+					耳机 音响
+				</span>
+				</div>
+				
+				<div class="span">
+				<span class="ton">
+					生活 箱包
+				</span>
+				</div>
+			</div>
+		</div>
+		
+	<div class="right_1">
+			<div class="one">
+			<img src="img/a.png">
+			<br>
+			<span>手机APP</span>
+			<div class="one_1">
+			<img src="img/a1.png">
+			<div class="one_3">
+			<img src="img/a2.png">
+			<br>
+			<span>手机赢好礼</span>
+			</div>
+			<br>
+			<span class="one_2">手机APP</span>
+			</div>
+			</div>
+			
+			<div class="two">
+			<img src="img/b.png">	
+			<br>
+			<span>个人中心</span>
+			<div class="two_1">
+			<img src="img/b1.png">
+			<br>
+			<span class="two_2">个人中心</span>
+			</div>
+			</div>
+			
+			<div class="three">
+			<img src="img/c.png">	
+			<br>
+			<span>售后服务</span>
+			<div class="three_1">
+			<img src="img/c1.png">
+			<br>
+			<span class="three_2">售后服务</span>
+			</div>
+			</div>
+			
+			<div class="four">
+			<img src="img/d.png">	
+			<br>
+			<span>联系客服</span>
+			<div class="four_1">
+			<img src="img/d1.png">
+			<br>
+			<span class="four_2">联系客服</span>
+			</div>
+			</div>
+			
+			<div class="five">
+			<img src="img/e.png">
+			<br>
+			<span>购物车</span>
+			<div class="five_1">
+			<img src="img/e1.png">
+			<br>
+			<span class="five_2">购物车</span>
+			</div>
+			</div>
+		</div>	
+	</body>
+</html>
